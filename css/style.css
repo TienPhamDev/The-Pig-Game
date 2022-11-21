@@ -45,7 +45,7 @@ body {
   font-size: 3.6rem;
   color: #444;
 }
-.totalscore {
+.totalScore {
   font-size: 6.6rem;
   font-weight: 500;
   margin-top: 2rem;
@@ -76,16 +76,7 @@ body {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.function-button {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .btn {
   padding: 1rem 2rem;
   border-radius: 100px;
@@ -94,20 +85,40 @@ body {
   cursor: pointer;
   box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.3);
 }
+.newgame {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.rolldice {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.hold {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
 .dice {
   width: 7.2rem;
   height: 7.2rem;
   background-color: #eee;
-  margin-top: 6.4rem;
-  margin-bottom: 11rem;
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
 
-  display: grid;
-  grid-template-columns: 1fr;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
 }
-.btn:last-child {
-  margin-top: 2.8rem;
+.dice-img {
+  width: 100%;
 }
+
 .dot {
   height: 10px;
   width: 10px;
@@ -116,4 +127,7 @@ body {
 
   justify-self: center;
   align-self: center;
+}
+.hidden {
+  display: none;
 }
